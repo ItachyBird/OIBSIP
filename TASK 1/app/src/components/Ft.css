@@ -1,0 +1,173 @@
+@font-face {
+  font-family: simple;
+  src: url(../Fonts/simple.otf) ;
+}
+
+@font-face {
+  font-family: heads;
+  src: url(../Fonts/heads.ttf) ;
+}
+
+.time {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative; /* Ensure the text box is positioned relative to the .time container */
+  
+}
+
+
+
+
+.l, .r {
+  height: 500px;
+  width: 500px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  background-size: cover; /* Make the image cover the entire div */
+  background-position: center; /* Center the image */
+}
+
+.l {
+  box-shadow: -8px 8px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.r {
+  box-shadow: -8px 8px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.l::after, .r::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 1; /* Ensure the gradient is above the background image */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.m {
+  margin-left: 80px;
+  margin-right: 80px;
+  width: auto;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  transform: translateX(-50%);
+}
+
+.circle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1000;
+  width: 100px;
+  height: 100px;
+  background-color: #bda18f;
+  border-radius: 50%;
+  border: 5px solid black;
+  display: flex; /* Use flexbox to center the content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1;
+  font-size: 25px;
+  
+  
+}
+
+
+
+
+
+
+.descline {
+  position: relative;
+  height: 2px; /* Thickness of the line */
+  background-color: #000; /* Color of the line */
+  margin: 20px 0; /* Space around the line */
+}
+
+.descline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Thickness of the line */
+  background-color: #000; /* Color of the line */
+}
+
+
+.rw{
+  padding-top: 40px;
+ 
+  height: 600px;
+  width: 600px;
+}
+
+.desc {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 30px;
+  font-family: heads;
+ 
+}
+
+
+
+.rw {
+  background-color: transparent; /* Semi-transparent background */
+  font-family: heads;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  transform: rotate(90deg);
+  margin-top: 30px;
+  width:600px;
+  
+}
+
+.rw h1{
+  font-size: 50px;
+}
+
+.rw p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.lw{
+  font-family: 'Times New Roman', Times, serif;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: heads;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  width: 250px;
+  height: auto;
+  margin-top: 500px;
+  z-index: 2;
+  margin-left: 20px;
+}
+.topline{
+  background-color: #000;
+  height: 5px;
+}

@@ -1,0 +1,139 @@
+@font-face {
+  font-family: campus;
+  src: url(../Fonts/campus.ttf);
+}
+
+body {
+  background-color: #333333;
+}
+
+.banner-container {
+  margin-top: 70px;
+  background-color: transparent;
+  height: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Optional: add padding for better appearance */
+  padding-bottom: 20px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+  color: #fCCB06;
+  font-size: 10vw;
+  font-family: campus;
+  height: 50vh;
+  background-color: transparent;
+  flex: 1; /* This makes each box take an equal share of the available space */
+  min-width: 0; /* Ensures boxes don't overflow */
+  border-radius: 10px;
+  background-size: cover; /* Ensures the image covers the entire box */
+  background-position: center; /* Centers the image in the box */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1 {
+  margin-top: 40px;
+  background-image: url('../assets/photos//b1.jpg'); /* Replace with your image path */
+}
+
+.box2 {
+  margin-bottom: 40px;
+  background-image: url('../assets/photos//b2.jpg'); /* Replace with your image path */
+}
+
+.box3 {
+  margin-top: 40px;
+  background-image: url('../assets/photos//b3.jpg'); /* Replace with your image path */
+}
+
+.box4 {
+  margin-bottom: 40px;
+  background-image: url('../assets/photos//b4.jpg'); /* Replace with your image path */
+}
+
+.box5 {
+  margin-top: 40px;
+  background-image: url('../assets/photos//b5.jpg'); /* Replace with your image path */
+}
+
+.box6 {
+  margin-bottom: 40px;
+  background-image: url('../assets/photos//b6.jpg'); /* Replace with your image path */
+}
+
+.box7 {
+  margin-top: 40px;
+  background-image: url('../assets/photos//b7.jpg'); /* Replace with your image path */
+}
+
+.headline {
+  font-family: campus;
+  font-size: 75px;
+  color: white;
+}
+
+.wrap {
+  text-align: center;
+}
+
+.highlight {
+  color: #fCCB06; /* Orange color */
+  text-shadow: 0 0 5px rgba(255, 208, 0, 0.815), 
+               0 0 10px rgba(255, 165, 0, 0.5),
+               0 0 15px rgba(255, 165, 0, 0.25);
+}
+
+.orange {
+  color: #fCCB06; /* Orange color */
+}
+
+/* Styles for phones (max-width: 599px) */
+@media (max-width: 599px) {
+  .headline {
+      font-size: 40px;
+      margin-top: 20px;
+  }
+}
+
+/* Styles for portrait tablets and large phones (min-width: 600px and max-width: 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .headline {
+      font-size: 50px;
+      margin-top: 30px;
+  }
+}
+
+/* Styles for landscape tablets and small desktops (min-width: 768px and max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .headline {
+      font-size: 60px;
+      margin-top: 40px;
+  }
+}
+
+/* Styles for desktops (min-width: 1024px and max-width: 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .headline {
+      font-size: 70px;
+      margin-top: 50px;
+  }
+}
+
+/* Styles for large desktops (min-width: 1280px) */
+@media (min-width: 1280px) {
+  .headline {
+      font-size: 80px;
+      margin-top: 60px;
+  }
+}

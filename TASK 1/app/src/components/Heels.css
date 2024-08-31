@@ -1,0 +1,130 @@
+.heels-page {
+    display: flex;
+    
+    align-items: center;
+    gap: 1vw;
+    padding: 2rem;
+    height: 100vh; /* Full viewport height */
+    background-color: white; /* Light grey background */
+    color: #000000; /* Dark text color */
+  }
+  
+  .title {
+    font-size: 2.5rem; /* Large title */
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 1.25rem; /* Medium paragraph text */
+    max-width: 600px; /* Limit width for better readability */
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  
+
+  .heeltext{
+    margin-left: 1vw;
+    width: 30vw;
+    text-align: right; 
+    margin-right: 5vw;
+    height: 60vh;
+  }
+
+  .heeltext h1{
+    
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    
+  }
+
+  .heeltext p{
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  .heelbox{
+    left: 0;
+    width: auto;
+    height: auto;
+    
+  }
+
+  .blackbox{
+    width: 20vw;
+    height: 15vh;
+    background-color: #242424;
+    margin-top: 10vh;
+  }
+
+
+  
+  .heelpic {
+    padding: 5vw; /* Adjust padding if needed */
+    position: relative;
+    height: 50vh; /* This makes the div height responsive based on viewport height */
+    width: 40vw;  /* This makes the div width responsive based on viewport width */
+    
+    overflow: hidden; /* Hide any overflow content */
+    background-size: contain; /* Make sure the image is fully contained within the div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-image: url('../assets/photos/heels.png'); /* Path to your image */
+  }
+  
+
+
+  .justpic-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%; /* Ensure the container takes the full width */
+    position: relative;
+    padding-right:10vw;
+  }
+  
+  .justpic {
+    background-size: cover; /* Make sure the image covers the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-image: url('../assets/photos/ronda.png'); /* Path to your image */
+    margin-top: 20vw;
+    width: 50vw;
+    aspect-ratio: 5 / 4;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-left: 1rem; /* Add some space between the image and the icon */
+    position: relative;
+  }
+  
+  .icon i {
+    font-size: 1.5rem; /* Size of the icons */
+    margin: 0 0.5rem; /* Space between icons */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and scale */
+  }
+  
+  .icon i:hover {
+    color: #007bff; /* Change color on hover (example: blue) */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  }
+  
+  .icon span {
+    margin-left: 1rem; /* Space between icons and text */
+    font-size: 1rem; /* Text size */
+  }
+
+
+
+
+
+  

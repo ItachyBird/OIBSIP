@@ -1,0 +1,181 @@
+@font-face {
+  font-family: campus;
+  src: url(../Fonts/campus.ttf);
+}
+
+.vwrap {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Twelve columns for flexible layout */
+  grid-auto-rows: minmax(100px, auto); /* Flexible row height */
+  gap: 20px; /* Gap between grid items */
+  width: 100%;
+  padding: 10vh;
+}
+
+.vtext1, .vtext2, .vtext3, .vtext4 {
+  color: white;
+  
+  display: flex;
+  flex-direction: column;
+  text-align: right;  
+  padding: 2vw;
+}
+
+.vtext1 h1, .vtext2 h1, .vtext3 h1, .vtext4 h1 {
+  font-size: 2vw;
+  text-align: right;
+  padding-bottom: 2vw;
+  margin: 0; /* Reset margin to prevent unwanted spacing */
+}
+
+.vtext1 p, .vtext2 p, .vtext3 p, .vtext4 p {
+  font-size: 1vw;
+  text-align: right;
+  margin: 0; /* Reset margin to prevent unwanted spacing */
+}
+
+.vpic1, .vpic2, .vpic3, .vpic4, .vtext1, .vtext2, .vtext3, .vtext4 {
+  width: 100%;
+  height: 100%; /* Make sure to set a height to maintain aspect ratio */
+  overflow: hidden; /* Optional: hides any overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vpic1 img, .vpic2 img, .vpic3 img, .vpic4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+.vpic1 {
+  grid-column: span 4; /* Customize column span */
+  grid-row: span 2; /* Customize row span */
+  width: 30vw;
+  height: 70vh;
+  transform: translate(0vw,-17vw);
+  border: 2px solid yellow ;
+}
+
+.vpic2 {
+  grid-column: span 6;
+  grid-row: span 3;
+  width: 30vw;
+  height: 80vh;
+  border: 2px solid white ;
+  
+}
+
+.vpic3 {
+  grid-column: span 2;
+  grid-row: span 2;
+  width: 20vw;
+  height: 60vh;
+  border: 2px solid yellow ;
+}
+
+.vpic4 {
+  grid-column: span 3;
+  grid-row: span 2;
+  width: 20vw;
+  height: 60vh;
+  transform: translate(-13.5vw,-10vw); /* Adjust the values as needed */
+  border: 2px solid white ;
+}
+
+.vtext1 {
+  grid-column: span 6;
+  grid-row: span 2;
+  width: 45vw;
+  height: 80vh;
+  border: 2px solid #ffffff;
+}
+
+.vtext2 {
+  grid-column: span 6;
+  grid-row: span 2;
+  width: 45vw;
+  height: 70vh;
+  border: 2px solid yellow;
+}
+
+.vtext3 {
+  grid-column: span 4;
+  grid-row: span 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 30vw;
+  height: 60vh;
+  border: 2px solid #ffffff;
+}
+
+.vtext4 {
+  grid-column: span 8;
+  grid-row: span 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40vw;
+  height: 39vh;
+  border: 2px solid yellow;
+}
+
+.vwl {
+  width: 100%;
+  height: 0.25vh;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+}
+
+.vpic-button {
+  position: absolute;
+  background-color: #000000; /* Black background color */
+  color: white; /* White text color */
+  border: 2px solid white; /* White border */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 2vh; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  z-index: 10;
+  opacity: 0;
+  padding: 1vh; /* Adjust padding to ensure circular shape */
+  width: 4vh; /* Explicitly set width */
+  height: 4vh; /* Explicitly set height */
+  display: flex; /* Center icon */
+  align-items: center; /* Center icon */
+  justify-content: center; /* Center icon */
+}
+
+.vpic1:hover .vpic-button, 
+.vpic2:hover .vpic-button, 
+.vpic3:hover .vpic-button, 
+.vpic4:hover .vpic-button {
+  opacity: 1; /* Show the button on hover */
+  visibility: visible; /* Make the button visible on hover */
+  transform: scale(1.2);
+}
+
+
+
+.vpic-button:hover {
+  background-color: #ffffff; /* Darker blue background on hover */
+  color: black;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.mainvcomptext {
+  text-align: center;
+  margin: 10vh;
+  font-size: 3vw;
+  color: #ffffff;
+  font-family: campus;
+}
+
+.df {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.check{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+}

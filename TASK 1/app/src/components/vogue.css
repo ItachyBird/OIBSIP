@@ -1,0 +1,42 @@
+@font-face {
+    font-family: campus;
+    src: url(../Fonts/campus.ttf);
+  }
+
+.vogueimg{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+.textvogue{
+    width: auto;
+    height: auto;
+    padding: 10vw;
+    left:50%;
+    top:50%;
+    
+}
+
+ .textvogue h1{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30vw;
+    font-family: campus;
+    background: url(../assets/photos/shadow.png);
+    background-size:cover ;
+
+}
+
+.grey{
+    color: rgba(255, 255, 255, 0.219);
+}
+
+.deepgrey{
+    color: rgba(179, 179, 179, 0.849);
+}
+

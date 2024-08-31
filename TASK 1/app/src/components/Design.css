@@ -1,0 +1,67 @@
+.designwrap {
+    display: flex;
+    width: 100vw;
+    height: 100vh; /* Adjust height as needed */
+    
+    position: relative;
+    overflow: hidden; /* Prevents overflow of scrolling images */
+    padding-bottom: 5vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.photo {
+    width: 30vw; 
+    height: 60vh; 
+    background-color: #00f; 
+    position: relative;
+    overflow: hidden; 
+    display: flex; /* Add display flex to center the image */
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+}
+.whiteline{
+    width:0.25vw;
+    background-color: white;
+    height: 80vh;
+}
+.about {
+    width: 30vw; 
+    height: 50vh; 
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; /* Add padding to ensure content is not flush against the edges */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    color: white;
+}
+
+.image-to-scroll {
+    width: 100%; /* Image will fit the container's width */
+    height: 100%; /* Image will fit the container's height */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    position: absolute; /* Ensure images are positioned absolutely */
+    top: 0;
+    left: 0;
+}
+
+.new-image {
+   
+    transform: translateX(100%); /* Start from outside the right of the container */
+    transition: transform 1s ease-in-out;
+}
+
+/* Responsive text scaling */
+.about h1{
+    font-size: calc(2rem + 1vw); /* Responsive font size based on viewport width */
+    /* Center align text */
+    padding-bottom: 5vh;
+     font-weight: bold;
+}
+
+.about p{
+    font-size:  calc(0.5rem + 1vw);
+}

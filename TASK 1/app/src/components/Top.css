@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative; /* Add this to ensure the textbox can be positioned relative to the container */
+}
+
+.Toporangebox {
+    position: absolute;
+    width: 25vw; /* 500px converted to vw */
+    height: 100vh; /* 1000px converted to vh */
+    background-color: #fCCB06;
+    margin-left: 1.5vw; /* 30px converted to vw */
+    position: relative; /* Add this to allow absolute positioning of child elements */
+}
+
+.Toporangeboxmove {
+    background-color: #fCCB06;
+    height: 50vh; /* 500px converted to vh */
+    width: 25vw; /* 500px converted to vw */
+    position: absolute;
+    /* Set initial position */
+    transform: translateX(0);
+    transition: transform 1s;
+    z-index: 2;
+}
+
+.textbox {
+    position: absolute;
+    top: 50%;
+    left: calc(50vw + 1.5vw + 10px); /* Adjust based on your layout */
+    transform: translateY(-50%);
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 40vw; /* Adjust as needed */
+    max-width: 50vw; /* Prevent overflow */
+    max-height: 60vh; /* Ensure it fits within the viewport */
+    font-size: clamp(1rem, 2vw + 1rem, 3.5rem); /* Responsive font size */
+    color: #fCCB06;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 1;
+}
+
+.Toporangeboxmove, .Toptextbox {
+    transform: translate3d(0, 0, 0);
+  }
+  .Toporangebox {
+    transform: translate3d(0, 0, 0);
+  }  
+
+
+
+  .Toporangebox, .Toporangeboxmove {
+    will-change: transform; /* Hint the browser about upcoming changes */
+  }
+  
+  .textbox {
+    will-change: opacity, transform; /* Optimize for opacity and transform animations */
+  }
+  
+  .Toporangeboxmove {
+    transition: transform 1s ease-out; /* Ensure smooth transition */
+  }
+  
+  .textbox {
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth transitions */
+  }
+  

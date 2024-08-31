@@ -1,0 +1,113 @@
+.indianwrap {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Twelve columns for flexible layout */
+    grid-auto-rows: minmax(100px, auto); /* Flexible row height */
+    gap: 20px; /* Gap between grid items */
+    padding: 20px; /* Padding around the grid */
+    width: 100%;
+    padding: 10vh;
+    
+}
+
+.indianpic1, .indianpic2, .indianpic3, .indianpic4, .text1, .text2, .text3, .text4 {
+    background-size: cover; /* Ensures the image fits within the container */
+    width: 100%;
+    height: 100%; /* Make sure to set a height to maintain aspect ratio */
+    overflow: hidden; /* Optional: hides any overflow */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Set specific background images for pictures */
+.indianpic1 {
+    background-image: url('../assets/photos/s.png');
+    grid-column: span 4; /* Customize column span */
+    grid-row: span 2; /* Customize row span */
+    width: 30vw;
+    height: 40vh;
+}
+.indianpic2 {
+    background-image: url('../assets/photos/s2.png');
+    grid-column: span 6;
+    grid-row: span 3;
+    width: 30vw;
+    height: 80vh;
+    
+}
+.indianpic3 {
+    background-image: url('../assets/photos/s3.png');
+    grid-column: span 2;
+    grid-row: span 2;
+    aspect-ratio: 3 / 4;
+}
+.indianpic4 {
+    background-image: url('../assets/photos/s4.png');
+    grid-column: span 3;
+    grid-row: span 2;
+    width: 40vw;
+    height: 60vh;
+    transform: translate(-10vw,-10vw); /* Adjust the values as needed */
+}
+
+
+.text1 {
+    grid-column: span 6;
+    grid-row: span 2;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 3vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text2 {
+    grid-column: span 6;
+    grid-row: span 2;
+    background-color: black;
+    
+    border-radius: 20px;
+}
+
+.text3 {
+    grid-column: span 4;
+    grid-row: span 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5vw;
+}
+
+.text4 {
+    grid-column: span 8;
+    grid-row: span 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40vw;
+    height: 39vh;
+    font-size: 1.5vw;
+}
+
+
+.iwl {
+    width: 100%;
+    height: 0.25vh;
+   
+    background-color: white;
+   
+    bottom: 0;
+    left: 0;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    .indianwrap {
+        grid-template-columns: repeat(6, 1fr); /* Fewer columns for smaller screens */
+    }
+
+    .indianpic1, .indianpic2, .indianpic3, .indianpic4, .text1, .text2, .text3, .text4 {
+        grid-column: span 6; /* Adjust span for smaller screens */
+    }
+}
